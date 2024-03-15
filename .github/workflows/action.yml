@@ -8,6 +8,7 @@ jobs:
 
       - name: Check out repository code
       - uses: actions/checkout@v4
+      - run: echo "Init repository"
         
       - name: Updating system
       - run: sudo apt-get update -y
