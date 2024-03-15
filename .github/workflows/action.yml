@@ -5,8 +5,10 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - name: Init repository
-      - uses: actions/checkout@v4 
+
+      - name: Check out repository code
+      - uses: actions/checkout@v4
+        
       - name: Updating system
       - run: sudo apt-get update -y
       - run: sudo apt-get full-upgrade -y
